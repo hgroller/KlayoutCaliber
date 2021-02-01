@@ -1,0 +1,28 @@
+# ---------------------------------
+#"act XCUT surrounds act NEM"
+min_cut = 2.nm
+met_encl = metal2.enclosing(metal1, min_cut)
+met_encl.output("Metal2 surrounds Metal1 < #{'%.12g' % cut} µm")
+# ---------------------------------
+
+
+{"act XCUT surrounds act NEM" { @ < 2 Microns
+   ENCLOSURE  "act NEM"  "act XCUT" < 2 ABUT >= 0 < 90 SINGULAR
+   Result1 =  CUT "act NEM" "act XCUT"
+}
+
+XCUT = xcut.enclosing(act, < 2.0)
+{"act XCUT surrounds act NEM" { @ < 2 Microns
+   ENCLOSURE  "act NEM"  "act XCUT" < 2 ABUT >= 0 < 90 SINGULAR
+   Result1 =  CUT "act NEM" "act XCUT"
+}
+
+{"act XCUT surrounds act NEM" { @ < 2 Microns
+   ENCLOSURE  "act NEM"  "act XCUT" < 2 ABUT >= 0 < 90 SINGULAR
+   Result1 =  CUT "act NEM" "act XCUT"
+}
+
+{"act XCUT surrounds act NEM" { @ < 2 Microns
+   ENCLOSURE  "act NEM"  "act XCUT" < 2 ABUT >= 0 < 90 SINGULAR
+   Result1 =  CUT "act NEM" "act XCUT"
+}
